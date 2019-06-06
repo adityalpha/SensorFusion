@@ -1,0 +1,9 @@
+1)Survey on
+  -Radar detection(plots)
+  -AIS plots
+2)Tracking in Radar(maritime) & AIS
+  -Implement KF
+3)Track to track fusion
+4)MMS setup(QT)
+5)Code deployment on QT/Python
+6)Simulation setup on STAGE CGF
