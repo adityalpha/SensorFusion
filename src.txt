@@ -1,0 +1,23 @@
+Dataset and good read
+https://www.researchgate.net/publication/272091635_Benchmark_4-target_passive_sonar_scenario_description_for_1-D_tracking
+
+Good KF theory and implementation on Jupyter
+https://share.cocalc.com/share/7557a5ac1c870f1ec8f01271959b16b49df9d087/Kalman-and-Bayesian-Filters-in-Python/08-Designing-Kalman-Filters.ipynb?viewer=share
+
+Inside math of KF (Gaussian) with code
+https://towardsdatascience.com/kalman-filters-a-step-by-step-implementation-guide-in-python-91e7e123b968
+Just code
+https://github.com/Garima13a/Kalman-Filters/blob/master/2.%201D%20Kalman%20Filter%2C%20solution.ipynb
+
+Similar src like above
+https://medium.com/@jaems33/understanding-kalman-filters-with-python-2310e87b8f48
+
+Generated random positional data. Good code and plot (WikiNotations, eqs)
+https://github.com/zziz/kalman-filter
+
+
+
+
+
+
+
