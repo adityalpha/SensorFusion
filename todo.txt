@@ -7,3 +7,11 @@
 4)MMS setup(QT)
 5)Code deployment on QT/Python
 6)Simulation setup on STAGE CGF
+
+Sources ->
+
+AIS dataset
+https://marinecadastre.gov/ais/
+
+conda install --channel https://conda.anaconda.org/CogSci pygame
+sudo apt-get install libsdl-ttf2.0-0 (on error)
