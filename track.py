@@ -1,3 +1,4 @@
+#backup for 2 ships
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib import style
@@ -19,8 +20,10 @@ ax.set_autoscale_on(False)
 
 def animate(i):
     global count
-    lat=np.array(ds[ds['MMSI']==273898000]['LAT'])[count:count+10:]
-    lon=np.array(ds[ds['MMSI']==273898000]['LON'])[count:count+10:]
+    lat1=np.array(ds[ds['MMSI']==273898000]['LAT'])[count:count+50:]
+    lon1=np.array(ds[ds['MMSI']==273898000]['LON'])[count:count+50:]
+    lat2=np.array(ds[ds['MMSI']==366940480]['LAT'])[count:count+50:]
+    lon2=np.array(ds[ds['MMSI']==366940480]['LON'])[count:count+50:]
     count+=1
     #graph_data = open('example.txt','r').read()
     #lines = graph_data.split('\n')
@@ -35,11 +38,17 @@ def animate(i):
     ax.set_title("AIS Tracking")
     ax.set_xlabel('Latitude')
     ax.set_ylabel('Longitude')
-    ax.set_xlim(62.7, 64.0)
-    ax.set_ylim(-175.0, -174.0)
+#   ax.set_xlim(62.7, 64.0)
+#   ax.set_ylim(-175.0, -174.0)
+    ax.set_xlim(45, 70.0)
+    ax.set_ylim(-190.0, -170.0)
+
     ax.set_autoscale_on(False)
-    ax.plot(lat, lon)
+    ax.plot(lat1, lon1, label='vessel1')
+    ax.plot(lat2, lon2, label='vessel2')
+
 
 count=0
 ani = animation.FuncAnimation(fig, animate, interval=100)
+plt.legend()
 plt.show()
